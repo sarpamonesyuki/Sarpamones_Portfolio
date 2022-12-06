@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLA3</title>
+    <link rel="stylesheet" href="gal/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Gallery</h1>
+    <div class="image-container">
+    <div class="image"><image src="photo/1.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/2.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/3.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/4.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/5.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/6.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/7.png" alt=""></image></div>
+    <div class="image"><image src="photo/8.png" alt=""></image></div>
+    <div class="image"><image src="photo/9.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/10.png" alt=""></image></div>
+    <div class="image"><image src="photo/11.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/12.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/13.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/14.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/15.png" alt=""></image></div>
+    <div class="image"><image src="photo/16.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/17.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/18.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/19.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/20.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/21.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/22.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/23.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/24.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/25.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/26.png" alt=""></image></div>
+    <div class="image"><image src="photo/27.png" alt=""></image></div>
+    <div class="image"><image src="photo/28.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/29.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/30.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/31.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/32.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/33.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/34.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/35.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/36.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/37.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/38.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/39.jpg" alt=""></image></div>
+    <div class="image"><image src="photo/40.jpg" alt=""></image></div>
+
+    </div> 
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="photo/1.jpg" alt="">
+    </div>
+<script>
+    document.querySelectorAll('.image-container img').forEach(image =>{
+        image.onclick = () =>{
+        document.querySelector('.popup-image').style.display = 'block';
+        document.querySelector('.popup-image img').src = image.getAttribute('src');
+        }
+    });
+    document.querySelector('.popup-image span').onclick = () =>{
+    document.querySelector('.popup-image').style.display = 'none';  
+    }
+</script>
+</body>
+</html>

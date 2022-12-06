@@ -1,0 +1,58 @@
+body{ 
+    background-image: url(img/background.webp);  
+    background-size: 100%;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	
+}
+a{
+	float: left;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+a:active,
+a:hover{
+		background: #000000;
+	color: #fff;;
+	transition: 0.4s all ease-out
+
+}
+table, tr, td{
+	border:2px solid black;
+	padding: 10px 15px;
+	border-collapse: collapse;
+	font-size: 15px;
+
+}
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+img{
+    height: 300px;
+    width: 420px;
+}
+h1{
+    color:rgb(41, 50, 53);
+    size: 64px;
+}
+h2{
+    color: #282631;
+    font-size: 64px;
+}
+h3{
+    color: #282631;
+    font-size: 64px;
+}
+p{
+    color: #000000;
+    font-size: 20px;
+}
+nav{
+	background-color: skyblue;
+	padding: 14px 16px;
+	margin:0;
+	overflow: hidden;
+}

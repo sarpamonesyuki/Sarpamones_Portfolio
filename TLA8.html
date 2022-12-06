@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarpamones TlA8</title>
+</head>
+<body align="center"> 
+<table align="center" cellpadding="15">
+	<tr><td><p> Year <span id="y"></span></p></td>
+	<td><p> Month <span id="m"></span></p></td>
+	<td><p> Day <span id="d"></span></p></td>
+	<td><p> Hours <span id="h"></span></p></td>
+	<td><p> Minutes <span id="m"></span></p></td>
+	<td><p> Seconds <span id="s"></span></p></td></tr>
+</table>
+<input type=" " id="TimeAndDate">
+<script>
+
+	var Today = new Date();
+	var D = Today.getFullYear()+'-'+(Today.getMonth()+1)+'-'+Today.getDate();
+	var T = Today.getHours() + ":" + Today.getMinutes() + ":" + Today.getSeconds();
+	
+			document.getElementById("TimeAndDate").value = D +' '+T ;
+	
+			</script>
+<p id="greetings"></p>
+<script>
+	const time = new Date().getHours();
+	let Greet;
+	if (time < 10) {
+		Greet = "Good Morning";
+	} else if (time < 20) {
+		Greet = "Good Afternoon";
+	} else {
+		Greet ="Good Evening";
+	}
+document.getElementById("greetings").innerHTML = Greet;
+
+</script>
+        </script>
+		<input id="myInput" type="text">
+
+		<button onclick="myFunction()">Find Food</button>
+		
+		<p id="FavoriteFood"></p>
+		
+		<script>
+		function myFunction() {
+		  var food;
+		  var foods = document.getElementById("myInput").value;
+		
+		  switch(foods) {
+			case "Bicol Express":
+			  food = "Bicol Express is my favourite!";
+			break;
+			case "Wagyu Beef":
+			food = "Wagyu Beef is my favourite!";
+			break;
+			case "Bulgogi":
+			food = "Bulgogi is my favourite!";
+			break;
+			case "Deep Fried Shrimp Tempura":
+			food = "Deep Fried Shrimp Tempura is my favourite!";
+			break;
+			default:
+			food = "Fave food not found...";
+		  }
+		  document.getElementById("FavoriteFood").innerHTML = food;
+		}
+		</script>
+</body>
+</html>

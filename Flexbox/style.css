@@ -1,0 +1,97 @@
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+}
+
+.container {
+    position : relative;
+    min-height: 100vh;
+    background:#ddd;
+}
+.container h1{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    padding: 15px;
+    color: black;
+    text-transform: capitalize;
+    text-align: center;
+}
+.container .image-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:40px;
+    justify-content: center;
+    padding: 20px;
+}
+.container .image-container .image{
+ height: 500px;
+ width: 500px;
+ border: 10px solid #fff;
+ box-shadow: 0 5px 15px rgba(0,0,0,.1);
+ overflow: hidden;
+ cursor: pointer ;
+}
+.container .image-container .image img{
+    height: 100%;
+ width: 100%;
+ object-fit: cover;
+ transition: .2s linear; 
+}
+.container .image-container .image:hover img{
+    transform:scale(1.1);
+}
+.container .popup-image{
+    position: fixed;
+    top:0; left: 0;
+    background: rgba(0,0,0,.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.container .popup-image span{
+    position:absolute;
+    top: 0; right: 10px;
+    font-size: 60px;    
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+.container .popup-image img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+@media (max-width:768px){
+    .container .popup-image img{
+        width: 95%;
+}
+}
+.topnav {
+    font-size: 34px;
+    padding: 0px;
+    margin:0;
+    list-style: none;
+    font-family: Arial;
+    text-align: center;
+    background-color: rgb(70, 70, 235)
+}
+.topnav a{
+  color: white;
+  text-align: center;
+  padding: 7px 8px;
+  text-decoration: none;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+h2{
+  text-align: center;
+} 

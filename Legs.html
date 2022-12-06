@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legs</title>
+    <link rel="stylesheet" href="Flexbox/style.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="Flex.html">Home</a>
+        <a href="Chest.html">Chest</a>
+        <a href="Back.html">Back</a>
+        <a href="Arm.html">Arm</a>
+        <a href="Abs.html">Abs</a>
+        <a href="Legs.html">Legs</a>
+        <a href="Shoulder.html">Shoulders</a>
+    </div>
+    <div class="container">
+        <h1>Legs</h1>
+    <div class="image-container">
+    <div class="image"><image src="photo/5.jpg" alt=""></image></div>
+</div> 
+<h2>Art 5</h2>
+<div class="popup-image">
+    <span>&times;</span>
+    <img src="photo/5.jpg" alt="">
+</div>
+<script>
+document.querySelectorAll('.image-container img').forEach(image =>{
+    image.onclick = () =>{
+    document.querySelector('.popup-image').style.display = 'block';
+    document.querySelector('.popup-image img').src = image.getAttribute('src');
+    }
+});
+document.querySelector('.popup-image span').onclick = () =>{
+document.querySelector('.popup-image').style.display = 'none';  
+}
+</script>
+</body>
+</html>
